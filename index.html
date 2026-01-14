@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FavGen | Professional Favicon Generator for Modern Web & PWAs</title>
+    
+    <meta name="description" content="Free professional favicon generator. Create standard, iOS, Android, and Windows tile icons instantly. 100% client-side privacy, PWA ready, and SEO optimized.">
+    <meta name="keywords" content="favicon generator, online favicon converter, create favicon, ico generator, pwa icon generator, apple touch icon, android chrome icon, windows tile icon, web development tools, privacy focused tools">
+    <meta name="author" content="Dippan Bhusal">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://favgen.dippanbhusal.tech/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://favgen.dippanbhusal.tech/">
+    <meta property="og:title" content="FavGen - Professional Favicon Generator">
+    <meta property="og:description" content="Generate the complete set of icons for modern web development. Supports standard, iOS, Android, and Windows tile formats in a single click.">
+    <meta property="og:image" content="https://favgen.dippanbhusal.tech/ogg.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://favgen.dippanbhusal.tech/">
+    <meta property="twitter:title" content="FavGen - Professional Favicon Generator">
+    <meta property="twitter:description" content="Generate all required favicon sizes for modern web development instantly and securely.">
+    <meta property="twitter:image" content="https://favgen.dippanbhusal.tech/ogg.png">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/favicon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="/favicon-256x256.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="/favicon-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon-144x144.png">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "FavGen",
+      "url": "https://favgen.dippanbhusal.tech/",
+      "logo": "https://favgen.dippanbhusal.tech/logo.png",
+      "description": "A professional, browser-based favicon generator for modern web development. Generates ICO, PNG, SVG, and Manifest files.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Dippan Bhusal",
+        "url": "https://dippanbhusal.tech"
+      },
+      "featureList": "Generates 30+ icon sizes, PWA Manifest creation, Windows Tile support, Privacy-focused client-side processing"
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], mono: ['Fira Code', 'monospace'] },
+                    colors: {
+                        bmc: '#FF813F', // Buy Me A Coffee Brand Color
+                    },
+                    animation: { 'fade-in': 'fadeIn 0.5s ease-out' },
+                    keyframes: { fadeIn: { '0%': { opacity: '0', transform: 'translateY(10px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } } }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-slate-800 dark:text-slate-100 transition-colors duration-300 antialiased overflow-x-hidden">
+
+    <div class="bg-mesh transition-colors duration-300" id="mainBg">
+        <div class="blob-1"></div><div class="blob-2"></div><div class="blob-3"></div>
+    </div>
+
+    <header class="sticky top-0 z-50 glass border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold shrink-0 overflow-hidden">
+                         <img src="https://favgen.dippanbhusal.tech/logo.png" alt="FavGen Logo" class="w-full h-full object-cover" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fa-solid fa-shapes\'></i>'">
+                    </div>
+                    <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500 truncate">FavGen</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://github.com/KDippan" target="_blank" class="hover:text-blue-500 transition-colors" aria-label="GitHub Profile"><i class="fa-brands fa-github text-xl"></i></a>
+                    <button id="themeToggle" class="p-2 rounded-full hover:bg-white/10 transition-colors" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon" id="themeIcon"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
+        
+        <div class="text-center mb-8 md:mb-12 animate-fade-in">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">Professional <span class="text-blue-500">Favicon</span> Generator</h1>
+            <p class="text-sm md:text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Generate standard, iOS, Android, and Windows tile formats in a single click. 100% Client-side & Privacy focused.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 mb-20">
+            <div class="lg:col-span-4 space-y-6 animate-fade-in">
+                <div class="glass rounded-2xl p-4 relative group cursor-pointer hover:border-blue-500/50 transition-colors" id="dropZone">
+                    <input type="file" id="fileInput" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" accept="image/*" aria-label="Upload Image">
+                    <div class="text-center py-6" id="uploadContent">
+                        <div class="w-14 h-14 mx-auto mb-3 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-500"><i class="fa-solid fa-cloud-arrow-up text-2xl"></i></div>
+                        <h3 class="font-semibold">Upload Image</h3>
+                        <p class="text-xs text-slate-500 mt-1">PNG, JPG, SVG (Max 10MB)</p>
+                    </div>
+                    <div id="sourcePreviewContainer" class="hidden text-center relative z-20">
+                        <img id="sourceImage" class="max-h-40 mx-auto rounded shadow-lg mb-4" src="" alt="Source Preview">
+                        <button id="removeImage" class="px-4 py-2 bg-red-500/20 text-red-400 rounded-full text-xs hover:bg-red-500/30 transition-colors">Remove</button>
+                    </div>
+                </div>
+
+                <div class="glass rounded-2xl p-4 space-y-4">
+                    <h3 class="font-semibold border-b border-gray-700/50 pb-2 text-sm">Configuration</h3>
+                    <div>
+                        <label class="block text-xs font-medium mb-2" for="bgColor">Background</label>
+                        <div class="flex gap-2 items-center">
+                            <input type="color" id="bgColor" value="#ffffff" class="h-8 w-12 rounded cursor-pointer bg-transparent border-0 p-0">
+                            <div class="flex items-center gap-2">
+                                <input type="checkbox" id="transparentBg" checked class="w-4 h-4 rounded text-blue-600 focus:ring-blue-500">
+                                <label for="transparentBg" class="text-xs cursor-pointer">Transparent</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1"><label class="text-xs font-medium" for="padding">Padding</label><span class="text-[10px] text-slate-400" id="paddingVal">0%</span></div>
+                        <input type="range" id="padding" min="0" max="50" value="0" class="w-full h-1.5 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-blue-500">
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1"><label class="text-xs font-medium" for="radius">Border Radius</label><span class="text-[10px] text-slate-400" id="radiusVal">0%</span></div>
+                        <input type="range" id="radius" min="0" max="50" value="0" class="w-full h-1.5 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-blue-500">
+                    </div>
+                </div>
+
+                <button id="downloadAll" disabled class="w-full py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-xl font-bold shadow-lg transition-all disabled:opacity-50 text-sm flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-download"></i> Download Pack
+                </button>
+            </div>
+
+            <div class="lg:col-span-8 space-y-6 animate-fade-in" style="animation-delay: 0.1s;">
+                <div class="glass rounded-2xl p-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="font-semibold text-sm"><i class="fa-solid fa-eye text-blue-500 mr-2"></i>Live Preview</h3>
+                        <span class="text-[10px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded">Real-time</span>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-3 max-h-[300px] overflow-y-auto custom-scrollbar" id="previewGrid">
+                        <div class="text-center col-span-full py-8 text-slate-500">
+                            <i class="fa-regular fa-image text-3xl mb-2 opacity-50"></i>
+                            <p class="text-xs">Upload to preview</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass rounded-2xl overflow-hidden w-full">
+                    <div class="flex border-b border-gray-700/50 overflow-x-auto no-scrollbar">
+                        <button class="px-4 py-3 text-xs font-medium border-b-2 border-blue-500 text-blue-500 bg-white/5 tab-btn whitespace-nowrap" data-tab="html">HTML</button>
+                        <button class="px-4 py-3 text-xs font-medium border-b-2 border-transparent text-slate-400 hover:text-slate-200 tab-btn whitespace-nowrap" data-tab="manifest">manifest.json</button>
+                        <button class="px-4 py-3 text-xs font-medium border-b-2 border-transparent text-slate-400 hover:text-slate-200 tab-btn whitespace-nowrap" data-tab="xml">browserconfig.xml</button>
+                    </div>
+                    
+                    <div class="relative group bg-[#2d2d2d] w-full">
+                        <button onclick="copyCode()" class="absolute top-2 right-2 z-10 p-1.5 bg-gray-800 rounded-md text-slate-400 hover:text-white shadow-lg" title="Copy Code">
+                            <i class="fa-regular fa-copy text-xs"></i>
+                        </button>
+                        
+                        <div id="code-html" class="tab-content block w-full overflow-x-auto p-4">
+<pre class="!m-0 !bg-transparent text-[10px] md:text-xs leading-relaxed"><code class="language-html">&lt;!-- Standard & Legacy --&gt;
+&lt;link rel="icon" type="image/x-icon" href="/favicon.ico"&gt;
+&lt;link rel="icon" type="image/svg+xml" href="/favicon.svg"&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"&gt;
+&lt;!-- Apple / iOS --&gt;
+&lt;link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png"&gt;
+&lt;!-- Android / PWA --&gt;
+&lt;link rel="manifest" href="/site.webmanifest"&gt;</code></pre>
+                        </div>
+                        
+                        <div id="code-manifest" class="tab-content hidden w-full overflow-x-auto p-4">
+<pre class="!m-0 !bg-transparent text-[10px] md:text-xs leading-relaxed"><code class="language-json">{
+  "name": "My App",
+  "icons": [
+    { "src": "/favicon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}</code></pre>
+                        </div>
+
+                        <div id="code-xml" class="tab-content hidden w-full overflow-x-auto p-4">
+<pre class="!m-0 !bg-transparent text-[10px] md:text-xs leading-relaxed"><code class="language-xml">&lt;browserconfig&gt;
+  &lt;msapplication&gt;
+    &lt;tile&gt;
+      &lt;square150x150logo src="/favicon-150x150.png"/&gt;
+      &lt;TileColor&gt;#ffffff&lt;/TileColor&gt;
+    &lt;/tile&gt;
+  &lt;/msapplication&gt;
+&lt;/browserconfig&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="space-y-12 animate-fade-in text-slate-600 dark:text-slate-300">
+            
+            <div class="glass p-6 md:p-8 rounded-2xl">
+                <h2 class="text-2xl font-bold mb-4 text-slate-800 dark:text-white">What is a Favicon?</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="mb-4 leading-relaxed">
+                            A **favicon** (short for "favorite icon") is a small icon associated with a particular website or webpage. It is typically displayed in the browser's address bar, tabs, and bookmarks list.
+                        </p>
+                        <p class="leading-relaxed">
+                            Originally used just for bookmarks in Internet Explorer, favicons now play a critical role in **Progressive Web Apps (PWA)**, mobile home screens (iOS & Android), and desktop taskbars.
+                        </p>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="bg-slate-100 dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 w-full max-w-sm">
+                            <div class="flex items-center space-x-2 border-b border-slate-300 dark:border-slate-600 pb-2 mb-2">
+                                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                            </div>
+                            <div class="bg-white dark:bg-slate-900 rounded p-2 flex items-center space-x-2">
+                                <div class="w-4 h-4 rounded bg-blue-500"></div> <div class="h-2 w-32 bg-slate-200 dark:bg-slate-700 rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-green-500/10 text-green-500 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-white">SEO & Branding</h3>
+                    <p class="text-sm">Favicons improve brand recognition. A distinct icon helps users identify your site in a cluttered list of tabs, indirectly boosting user retention and SEO metrics.</p>
+                </div>
+                <div class="glass p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-blue-500/10 text-blue-500 rounded-lg flex items-center justify-center mb-3"><i class="fa-brands fa-apple"></i></div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-white">Mobile Ready</h3>
+                    <p class="text-sm">Modern web apps live on home screens. FavGen creates high-res "Touch Icons" for iOS and Android, ensuring your app looks like a native application.</p>
+                </div>
+                <div class="glass p-6 rounded-xl">
+                    <div class="w-10 h-10 bg-purple-500/10 text-purple-500 rounded-lg flex items-center justify-center mb-3"><i class="fa-solid fa-lock"></i></div>
+                    <h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-white">Privacy Focused</h3>
+                    <p class="text-sm">Unlike other tools, FavGen processes everything **locally in your browser**. Your images never touch our servers.</p>
+                </div>
+            </div>
+
+            <div class="glass p-6 md:p-8 rounded-2xl">
+                <h2 class="text-2xl font-bold mb-6 text-slate-800 dark:text-white">FavGen Specifications</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="text-xs uppercase bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                            <tr>
+                                <th class="px-6 py-3 rounded-l-lg">Category</th>
+                                <th class="px-6 py-3">Formats Generated</th>
+                                <th class="px-6 py-3 rounded-r-lg">Key Sizes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-slate-200 dark:border-slate-700">
+                                <td class="px-6 py-4 font-medium">Standard Browsers</td>
+                                <td class="px-6 py-4">ICO, PNG, SVG</td>
+                                <td class="px-6 py-4 font-mono text-xs">16x16, 32x32, 48x48</td>
+                            </tr>
+                            <tr class="border-b border-slate-200 dark:border-slate-700">
+                                <td class="px-6 py-4 font-medium">Google / Android</td>
+                                <td class="px-6 py-4">PNG, Web Manifest</td>
+                                <td class="px-6 py-4 font-mono text-xs">192x192, 512x512 (PWA)</td>
+                            </tr>
+                            <tr class="border-b border-slate-200 dark:border-slate-700">
+                                <td class="px-6 py-4 font-medium">Apple iOS</td>
+                                <td class="px-6 py-4">PNG (Apple Touch Icon)</td>
+                                <td class="px-6 py-4 font-mono text-xs">180x180, 152x152</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-medium">Windows</td>
+                                <td class="px-6 py-4">PNG, BrowserConfig</td>
+                                <td class="px-6 py-4 font-mono text-xs">150x150, 310x310 Tiles</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h2 class="text-2xl font-bold mb-6 text-center text-slate-800 dark:text-white">Frequently Asked Questions</h2>
+                
+                <details class="glass rounded-xl group">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                        <span class="font-medium text-slate-800 dark:text-white">Is FavGen completely free?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="px-6 pb-6 text-sm">
+                        Yes, FavGen is 100% free and open source. You can use it for personal and commercial projects without any attribution, though supporting us via "Buy Me a Coffee" is appreciated!
+                    </div>
+                </details>
+
+                <details class="glass rounded-xl group">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                        <span class="font-medium text-slate-800 dark:text-white">Do you save my images?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="px-6 pb-6 text-sm">
+                        No. FavGen runs entirely in your web browser using JavaScript and Canvas API. Your files are processed on your device and are never uploaded to any server.
+                    </div>
+                </details>
+
+                <details class="glass rounded-xl group">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                        <span class="font-medium text-slate-800 dark:text-white">Why do I need so many files?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="px-6 pb-6 text-sm">
+                        Different devices require different resolutions. A 16x16 icon looks great in a tab, but terrible on a high-resolution iPhone home screen. FavGen creates all specific sizes to ensure your brand looks crisp everywhere.
+                    </div>
+                </details>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="border-t border-white/10 mt-12 glass relative z-10">
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-center md:text-left text-sm text-slate-400">
+                    <p class="font-semibold text-slate-200">FavGen Project</p>
+                    <p class="mt-1">&copy; 2026 Dippan Bhusal. Open Source (MIT).</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-slate-400 hover:text-blue-400 text-sm transition-colors">Privacy</a>
+                    <a href="#" class="text-slate-400 hover:text-blue-400 text-sm transition-colors">Terms</a>
+                    <a href="https://github.com/KDippan" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-github text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 bg-slate-900/95 border-t border-slate-700 p-4 transform translate-y-full transition-transform duration-500 z-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-slate-300 text-center sm:text-left">
+                We use local storage to save your theme preference. No personal data is tracked.
+            </p>
+            <div class="flex gap-3">
+                <button onclick="acceptCookies()" class="px-6 py-2 bg-bmc text-white text-sm font-bold rounded-lg hover:brightness-110 transition-all shadow-lg shadow-orange-500/20">
+                    Accept
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+    
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="dippanbhusal" data-description="Support me on Buy me a coffee!" data-message="Support my Work !" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+    <script>
+        function acceptCookies() {
+            document.getElementById('cookieBanner').classList.add('translate-y-full');
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+        
+        // Check on load
+        window.addEventListener('load', () => {
+            if (!localStorage.getItem('cookiesAccepted')) {
+                setTimeout(() => {
+                    document.getElementById('cookieBanner').classList.remove('translate-y-full');
+                }, 1000);
+            }
+        });
+    </script>
+    
+    <script src="main.js"></script>
+</body>
+</html>
